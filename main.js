@@ -20,6 +20,44 @@ let mainContent = document.getElementById('mainContent');
 let background = document.getElementById('background');
 let nameElement = document.getElementById('name');
 
+let leftBtn = document.getElementById('left');
+let rightBtn = document.getElementById('right');
+
+leftBtn.addEventListener('click',()=>{
+    if(count == 0 ){
+        return;
+    }
+    else{
+        count--;
+        console.log(count);
+
+        let mailContent = mail[count];
+        let backgroundPic = picture[count];
+        let name = names[count];
+
+        mainContent.textContent = mailContent;
+        background.setAttribute('src',backgroundPic);
+        nameElement.textContent = name;
+    }
+});
+rightBtn.addEventListener('click',()=>{
+    if(count == mail.length-1 ){
+        return;
+    }
+    else{
+        count++;
+        console.log(count);
+
+        let mailContent = mail[count];
+        let backgroundPic = picture[count];
+        let name = names[count];
+
+        mainContent.textContent = mailContent;
+        background.setAttribute('src',backgroundPic);
+        nameElement.textContent = name;
+    }
+})
+/*
 $('#left').click(()=>{
     if(count == 0 ){
         return;
@@ -54,4 +92,4 @@ $('#right').click(()=>{
         nameElement.textContent = name;
     }
 });
-
+*/
