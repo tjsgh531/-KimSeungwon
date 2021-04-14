@@ -10,8 +10,8 @@ let mail = ["단결! 김승원 하사님(이제 전역하면 친구니깐 말 �
 ,'제가 하고싶은 말이 많은데, 막상하려니 잘 생각이 나질 않습니다. 6개월간 고생 많으셨습니다. 감사합니다!.'
 ,'단결, 할 수 있습니다!김승원 하사님 저 상병 윤용균입니다.제가 처음 왔을땐 병장이시고 제가 이등병이였는데 벌써 시간이 흘러 제가 상병 입니다. 처음 왔을때부터 많은 도움을 주시고 간부가 되어서도 2소대를 위해 희생해 주셔서 감사합니다.  남들보다 긴 군 생활 하시면서 정말 고생 많으셨습니다. 사회에 나가서도 앞날이 밝게 빛나길 바라겠습니다. 그동한 수고하셨습니다.'
 ];
-let picture = ['./background/노동건.jpg','./background/최준탁.jpeg','./background/양태규.png','./background/박민근.jpg'
-,'./background/이선호.png','./background/안성민.jpg','./background/신지민.jpeg','./background/이기중.jpg'
+let picture = ['./background/노동건.jpg','./background/최준탁.jpg','./background/양태규.jpg','./background/박민근.jpg'
+,'./background/이선호.jpg','./background/안성민.jpg','./background/신지민.jpg','./background/이기중.jpg'
 ,'./background/윤용균.jpg'];
 
 let count = 0;
