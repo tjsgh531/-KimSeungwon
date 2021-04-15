@@ -15,6 +15,12 @@ img{
     opacity: 0.3;
 
 }
+.end{
+    color:rgb(255, 255, 255);
+}
+.start{
+    color: black;
+}
 #name{
     position: absolute;
     left:50%;
@@ -29,6 +35,7 @@ html{
     height: 100%;
 }
 body{
+    max-width: 540px;
     width: 100%;
     height: 100%;
     
@@ -58,16 +65,21 @@ body{
 
 }
 #left{
-    position: fixed;
-    left: 4%;
+    position: absolute;
+    left: 5%;
     top: 50%;
 
     font-size: 24px;
+
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
 }
 #right{
-    position: fixed;
-    right: 4%;
+    position: absolute;
+    right: 5%;
     top: 50%;
 
     font-size: 24px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
 }
