@@ -32,13 +32,31 @@ let nameElement = document.getElementById('name');
 let leftBtn = document.getElementById('left');
 let rightBtn = document.getElementById('right');
 
+let preImage = new Image();
+let nextImage = new Image();
+nextImage.setAttribute('src',picture[++count]);
+nextImage.onload;
+
+function loadPicture(countNum){
+    let preNum = countNum--;
+    let nextNum = countNum++;
+    if(preNum >= 0){
+        preImage.setAttribute('src',picture[preNum]);
+    }
+    if(nextNum <= picture.length){
+        nextImage.setAttribute('src',picture[nextNum]);
+    }
+    preImage.onload;
+    nextImage.onload;
+}
+
 leftBtn.addEventListener('click',()=>{
     if(count == 0 ){
         return;
     }
     else{
         count--;
-        console.log(count);
+        loadPicture(count);
 
         let mailContent = mail[count];
         let backgroundPic = picture[count];
@@ -64,7 +82,7 @@ rightBtn.addEventListener('click',()=>{
     }
     else{
         count++;
-        console.log(count);
+        loadPicture(count);
 
         let mailContent = mail[count];
         let backgroundPic = picture[count];
